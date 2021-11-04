@@ -93,7 +93,7 @@ nav {
     
     .Home {
       @include page();
-      background-image: url(/Images/digital-art-g027311e23_1920.jpg);
+      background-image: url('/Images/fireproof\ cloak.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -142,23 +142,25 @@ nav {
   
     .About{
           @include page();
-          padding-top: 90px;
-          outline: 1px solid red;
+          padding-top: 50px;
           .section-2 {
+            margin-top: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
             font-family: $font-family; 
             h1{
-              padding-bottom: 1rem;
-            }  
+              padding-bottom: .5rem;
+            } 
+            .paragraph-1{
+              font-weight: 700;
+            } 
           } 
           img {
             padding: 20px;
           }  
       button{
-        margin-top: 150px;
         background-color: $hero-color;
         border: none;
         border-radius: 10px;
@@ -170,7 +172,7 @@ nav {
         font-size: 1rem;
         font-weight: bold;
         font-family: $font-family;
-        margin: 20px auto 0 auto;
+        margin: 30px auto 20px auto;
       }
       a{
         color: white;
