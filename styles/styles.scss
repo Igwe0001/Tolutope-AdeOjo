@@ -114,7 +114,9 @@ nav.sticky h2 {
   justify-content: space-between;
   align-items: center;
   padding-top: 200px;
-
+  img {
+    display: none;
+  }
   .text {
     font-weight: bolder;
     font-size: 2rem;
@@ -122,11 +124,15 @@ nav.sticky h2 {
     font-family: $font-family;
     color: whitesmoke;
   }
+   .Tolulope {
+       color: $hero-color;
+     }
+
   span {
     color: white;
   }
   .dev {
-    color: white;
+    color: $hero-color;
   }
 
   .wave {
@@ -397,6 +403,22 @@ input[type="text"]:focus {
   color: white;
 }
 
+
+input[type="email"] {
+  outline: none;
+  // border: 1px solid white;
+  padding: 7px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #0d0a0a;
+}
+
+input[type="email"]:focus {
+  border: 1px solid orangered;
+  color: white;
+}
+
 form {
   padding: 1rem 0.625rem;
   font-family: $font-family;
@@ -448,8 +470,34 @@ textarea:focus {
 
 footer {
   height: 150px;
-  outline: 1px solid red;
+  background-color: #0d0a0a;
+  color: #fff;
+  font-family: $font-family;
+}
 
+.footer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  h2{
+    padding: 10px 0;
+  }
+  .fab {
+    padding:3px 5px;
+   font-size: 25px;
+  }
+
+
+  .final-text{
+    display: flex;
+    padding: 5px 3px;
+  }
+  .far {
+    padding: 0 5px;
+    margin-top: 6px;
+  }
 }
 
 .scrollup {
@@ -466,7 +514,26 @@ footer {
   }
 }
 
-@media (min-width: 670px) {
+@media (min-width: 610px) {
+  .content{
+    justify-content: center;
+    text-align: center;
+    .text{
+      font-size: 50px;
+     .first-text{
+       padding-bottom: 30px;
+     }
+    
+     .teet{
+       display: flex;
+       padding: 20px 0;
+     }
+     .dev {
+       padding: 0 10px;
+       color: $hero-color
+     }
+    }
+  }
   nav .nav-links {
     background-color: transparent;
     transform: none;
@@ -509,6 +576,13 @@ footer {
     color: white;
   }
 
+  .section-2 h1 {
+    font-size: 40px;
+  }
+  
+  .section-2 p {
+    font-size: 20px;
+  }
   .ab {
     display: flex;
     flex-direction: row-reverse;
@@ -519,13 +593,59 @@ footer {
       text-align: left;
       padding-top: 70px;
       max-width: 400px;
+      font-size: 18px;
+      font-weight: 400;
     }
   }
   .spirit {
     width: 350px;
   }
+
+  .section-5 {
+    h2{
+      font-size: 40px;
+    }
+    span {
+      font-size: 25px;
+    }
+  }
 }
 
+@media (min-width: 770px) {
+  .content{
+    text-align: start;
+    justify-content: start;
+    img {
+    display: block;
+    position: absolute;
+    left: 60%;
+    top: 20%;
+  } 
+  }
+   nav {
+    padding: 0 5rem;
+  }
+
+  .Section {
+     padding: 5rem 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+   nav {
+    padding: 0 8rem;
+  }
+
+  .Section {
+     padding: 5rem 8rem;
+  }
+
+  .Services .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 
 @media(min-width: 1200px) {
   nav {
