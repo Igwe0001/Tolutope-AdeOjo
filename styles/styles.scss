@@ -37,6 +37,9 @@ nav {
   a {
     color: $hero-color;
     font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .div {
     background-color: white;
@@ -124,9 +127,9 @@ nav.sticky h2 {
     font-family: $font-family;
     color: whitesmoke;
   }
-   .Tolulope {
-       color: $hero-color;
-     }
+  .Tolulope {
+    color: $hero-color;
+  }
 
   span {
     color: white;
@@ -403,7 +406,6 @@ input[type="text"]:focus {
   color: white;
 }
 
-
 input[type="email"] {
   outline: none;
   // border: 1px solid white;
@@ -481,22 +483,35 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
-  h2{
+  h2 {
     padding: 10px 0;
   }
   .fab {
-    padding:3px 5px;
-   font-size: 25px;
+    padding: 3px 5px;
+    font-size: 25px;
   }
 
+  .fab:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
+  }
 
-  .final-text{
+  .final-text {
     display: flex;
     padding: 5px 3px;
+    h3 {
+      font-size: 10px;
+      padding-top: 10px;
+    }
   }
   .far {
     padding: 0 5px;
     margin-top: 6px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
   }
 }
 
@@ -515,23 +530,23 @@ footer {
 }
 
 @media (min-width: 610px) {
-  .content{
+  .content {
     justify-content: center;
     text-align: center;
-    .text{
+    .text {
       font-size: 50px;
-     .first-text{
-       padding-bottom: 30px;
-     }
-    
-     .teet{
-       display: flex;
-       padding: 20px 0;
-     }
-     .dev {
-       padding: 0 10px;
-       color: $hero-color
-     }
+      .first-text {
+        padding-bottom: 30px;
+      }
+
+      .teet {
+        display: flex;
+        padding: 20px 0;
+      }
+      .dev {
+        padding: 0 10px;
+        color: $hero-color;
+      }
     }
   }
   nav .nav-links {
@@ -579,7 +594,7 @@ footer {
   .section-2 h1 {
     font-size: 40px;
   }
-  
+
   .section-2 p {
     font-size: 20px;
   }
@@ -602,7 +617,7 @@ footer {
   }
 
   .section-5 {
-    h2{
+    h2 {
       font-size: 40px;
     }
     span {
@@ -612,32 +627,32 @@ footer {
 }
 
 @media (min-width: 770px) {
-  .content{
+  .content {
     text-align: start;
     justify-content: start;
     img {
-    display: block;
-    position: absolute;
-    left: 60%;
-    top: 20%;
-  } 
+      display: block;
+      position: absolute;
+      left: 60%;
+      top: 20%;
+    }
   }
-   nav {
+  nav {
     padding: 0 5rem;
   }
 
   .Section {
-     padding: 5rem 5rem;
+    padding: 5rem 5rem;
   }
 }
 
 @media (min-width: 1024px) {
-   nav {
+  nav {
     padding: 0 8rem;
   }
 
   .Section {
-     padding: 5rem 8rem;
+    padding: 5rem 8rem;
   }
 
   .Services .container {
@@ -647,13 +662,13 @@ footer {
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   nav {
     padding: 0 10rem;
   }
 
   .Section {
-     padding: 5rem 10rem;
+    padding: 5rem 10rem;
   }
 
   .Services .container {
