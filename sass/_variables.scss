@@ -1,0 +1,25 @@
+// Color
+
+$Background-color: #fff;
+$nav-background: #ff4500;
+$close-color: #dbf2ff;
+$media-color: #86aee1;
+$text-color: #000;
+$text-invert: #fff;
+$blender: grey;
+$shadow-bottom: #e1d3d3;
+$transparency: rgba(0, 0, 0, 0.98);
+
+// Fonts
+
+$Mont: "Montserrat", sans-serif;
+$Arial: Arial, Helvetica, sans-serif;
+
+@media (prefers-color-scheme: dark) {
+  $Background-color: #000;
+  $text-color: #fff;
+  $text-invert: #000;
+}
+
+
+

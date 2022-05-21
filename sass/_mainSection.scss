@@ -1,0 +1,163 @@
+@use "variables" as *;
+@use "generalStyles" as *;
+
+//Main section styles
+
+// main {
+//     // outline: 1px solid red;
+//     width: 100%;
+//     height: 100%;
+// }
+
+.main-section {
+  // outline: 1px solid blue;
+  display: grid;
+  place-items: center;
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin-bottom: 3rem;
+  @include general;
+
+  .image {
+    // outline: 1px solid red;
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+
+    &:hover {
+    transition: all 0.2s ease;
+      transform: scale(1.2);
+    }
+  }
+
+  .img1 {
+    background-image: url("../ade/thumbs/img1.jpg");
+  }
+
+  .img2 {
+    background-image: url("../ade/thumbs/img2.jpg");
+  }
+
+  .img3 {
+    background-image: url("../ade/thumbs/img3.jpg");
+  }
+
+  .img4 {
+    background-image: url("../ade/thumbs/img4.jpg");
+  }
+
+  .img5 {
+    background-image: url("../ade/thumbs/img5.jpg");
+  }
+
+  .img6 {
+    background-image: url("../ade/thumbs/img6.jpg");
+  }
+
+  .img7 {
+    background-image: url("../ade/thumbs/img7.jpg");
+  }
+
+  .img8 {
+    background-image: url("../ade/thumbs/img8.jpg");
+  }
+
+  .img9 {
+    background-image: url("../ade/thumbs/img9.jpg");
+  }
+
+  .img10 {
+    background-image: url("../ade/thumbs/img10.jpg");
+  }
+
+  .img11 {
+    background-image: url("../ade/thumbs/img11.jpg");
+  }
+
+  .img12 {
+    background-image: url("../ade/thumbs/img12.jpg");
+  }
+
+  .img13 {
+    background-image: url("../ade/thumbs/img13.jpg");
+  }
+
+  .img14 {
+    background-image: url("../ade/thumbs/img14.jpg");
+  }
+
+  .img15 {
+    background-image: url("../ade/thumbs/img15.jpg");
+  }
+
+  .img16 {
+    background-image: url("../ade/thumbs/img16.jpg");
+  }
+
+  .img17 {
+    background-image: url("../ade/thumbs/img17.jpg");
+  }
+
+  .img18 {
+    background-image: url("../ade/thumbs/img18.jpg");
+  }
+
+  .img19 {
+    background-image: url("../ade/thumbs/img19.jpg");
+  }
+
+  .img20 {
+    background-image: url("../ade/thumbs/img20.jpg");
+  }
+
+  .img21 {
+    background-image: url("../ade/thumbs/img21.jpg");
+  }
+
+  .img22 {
+    background-image: url("../ade/thumbs/img22.jpg");
+  }
+}
+// ,
+
+// .image {
+// }
+
+// .image .img1 {
+//   // background-image: url("../ade/img1.jpg");
+//   height: 100%;
+//   width: 100%;
+//   background-color: blue;
+//   outline: 1px solid blue;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: center;
+// }
+
+// .img .img2 {
+//   background-image: url("../ade/img2.jpg");
+// }
+
+.title {
+  // outline: 1px solid blue;
+  height: 5rem;
+  width: 100%;
+  // background-color: red;
+  text-align: center;
+  padding-top: 0.7rem;
+  margin-top: 30rem;
+  font-size: 1.5rem;
+
+  text-transform: uppercase;
+  font-family: $Mont;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}

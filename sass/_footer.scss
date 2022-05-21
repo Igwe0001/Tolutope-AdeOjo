@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+//footer styles
+
+footer {
+    // outline: 1px solid red;
+    height: 8rem;
+    display: grid;
+    place-items: center;
+    position: sticky;
+    top: 100%;
+}
+
+.socials {
+    // outline: 1px solid blue;
+    width: 100%;
+}
+
+.socials ul {
+    display: flex;
+    // outline: 1px solid green;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials li {
+    margin: 0 .8rem;
+}
+
+.socials i {
+    font-size: 3rem;
+    color: $text-color;
+    color: $blender;
+}

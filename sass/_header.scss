@@ -1,0 +1,187 @@
+@use "generalStyles" as *;
+@use "variables" as *;
+@use "breakPoints" as *;
+
+header {
+  // outline: 1px solid red;
+  position: relative;
+  width: 100%;
+  height: 9rem;
+  transition: height .2s ease;
+  z-index: 100;
+
+  .header-container {
+    // outline: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @include general;
+  }
+
+  .hamburger {
+    // outline: 1px solid green;
+    display: block;
+    width: 4.8rem;
+    height: 4.8rem;
+    position: relative;
+    cursor: pointer;
+
+    .bun {
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      top: 0.9rem;
+      left: 0.8rem;
+      transition: transform 0.18s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.15s;
+    }
+
+    .bun-crust {
+      display: block;
+      width: 3rem;
+      height: 0.1rem;
+      position: absolute;
+      left: 0.3rem;
+      background-color: #000;
+      transition: transform 0.16s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s;
+    }
+
+    .bun-crust-top {
+      top: 1.4rem;
+      transform: translateY(-0.3rem);
+    }
+
+    .bun-crust-bottom {
+      bottom: 1.4rem;
+      transform: translateY(0.3rem);
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-family: $Mont;
+    font-size: 3.3rem;
+    font-weight: 400;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $nav-background;
+    }
+  }
+}
+
+nav {
+  // outline: 1px solid blue;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 0;
+  visibility: hidden;
+  background-color: $text-color;
+  transition: all 0.58s ease;
+
+  .nav-container {
+    height: 100%;
+  }
+
+  ul {
+    // outline: 1px solid red;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+  }
+
+  li {
+    // outline: 1px solid green;
+    padding: 1rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: $Mont;
+    font-size: 1.156rem;
+    color: $text-invert;
+    text-transform: uppercase;
+    visibility: hidden;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $nav-background;
+    }
+  }
+}
+
+//Header Media Queries
+
+@media (min-width: 760px) {
+  header {
+    height: 15rem;
+
+    .hamburger {
+      display: none;
+    }
+  }
+
+  nav {
+    position: initial;
+    height: 15%;
+    visibility: visible;
+    width: 20%;
+    background-color: inherit;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    a {
+      font-size: 1.4rem;
+      color: $text-color;
+      visibility: visible;
+    }
+  }
+}
+
+//Nav toggle
+
+.switch {
+  height: 15rem;
+  visibility: visible;
+}
+
+a.toggle {
+  transition: all .4s ease;
+  visibility: visible;
+}
+
+.bun-top.toggle {
+  transform: rotate(45deg);
+}
+
+.bun-bottom.toggle {
+  transform: rotate(-45deg);
+}
+
+.bun-crust-top.toggle {
+  transform: none;
+  transition: transform 0.18s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+
+.bun-crust-bottom.toggle {
+  transform: none;
+  transition: transform 0.18s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+
+
+//Header sticky
+
+.sticky {
+  position: fixed;
+  background-color: $text-invert;
+  height: 7rem;
+  box-shadow: 0 4px 2px -2px $shadow-bottom
+}
