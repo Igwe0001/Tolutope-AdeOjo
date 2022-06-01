@@ -30,6 +30,22 @@ hamburger.addEventListener("click", () => {
   });
 });
 
+
+link.forEach((e) => {
+  e.addEventListener("click", () => {
+    nav.classList.remove("switch");
+    link.forEach((e) => {
+      e.classList.remove("toggle");
+    });
+    bun.forEach((e) => {
+      e.classList.remove("toggle");
+    });
+    bunCrust.forEach((e) => {
+      e.classList.remove("toggle");
+    });
+  });
+});
+
 //Sticky Header With Intersection Observer
 
 /*
